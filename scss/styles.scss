@@ -21,7 +21,7 @@ $baseFontSize: 120%;
 $defaultFont: $font-stack-lato;
 $logoFont: $font-stack-pacifico;
 $titleFont: $font-stack-pacifico;
-$popupFont: $font-stack-pacifico;
+$popupFont: $font-stack-lato;
 
 // Color themes
 // https://color.adobe.com/Woman-in-purple-dress-color-theme-32850/
@@ -289,7 +289,7 @@ body{
     font-weight: 100;
     z-index: 2000;
     line-height: 1.33em;
-    font-size: 10pt;
+    font-size: 12pt;
   }
 
   /*&:after{
@@ -315,7 +315,6 @@ body{
 
 // media queries
 @media screen and (min-width: 545px) {
-  
 
 .section.logo h1 .moustache{
         @include animation(none);
