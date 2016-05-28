@@ -22,26 +22,47 @@ $defaultFont: $font-stack-lato;
 $logoFont: $font-stack-pacifico;
 $titleFont: $font-stack-pacifico;
 $popupFont: $font-stack-lato;
+$sloganFont: $font-stack-lato;
 
 // Color themes
 // https://color.adobe.com/Woman-in-purple-dress-color-theme-32850/
 $color_0: #fff;
-$color_1: #421E4E;
-$color_2: #CC4452;
-$color_3: #F9E4AD;
+$color_1: #F9E4AD;
+$color_2: #E6B098;
+$color_3: #CC4452;
 $color_4: #723147;
 $color_5: #31152B;
+
+
+$color_0: #fff;
+$color_1: #96ceb4;
+$color_2: #ffeead;
+$color_3: #ff6f69;
+$color_4: #ffcc5c;
+$color_5: #aad8b0;
 
 // Apply the color theme
 $fontColor:       $color_0;
 $backgroundColor: $color_1;
 $logoColor:       $color_2;
-$headerColor:     $color_3;
+$headerColor:     $color_1;
 $featuresColor:   $color_4;
 $footerColor:     $color_5;
-$socialColor:     mix($logoColor, $featuresColor);
+$socialColor:     $color_3;
 // 'love' section has an in-between color
 $loveColor:       mix($featuresColor, $footerColor);
+
+// text colors
+$textColorLight: #fbfbfb;
+$textColorDark: #4b4b4b;
+
+$logoTextColor: $textColorDark;
+$headerTextColor: $textColorDark;
+$featuresTextColor: $textColorDark;
+$footerTextColor: $textColorDark;
+$socialTextColor: $textColorLight;
+$loveTextColor: $textColorDark;
+$popupTextColor: $textColorDark;
 
 // Spacing
 $sectionSpacing: 3em;
@@ -103,7 +124,7 @@ body{
     font-size: 1.4em;
     //font-weight: 700;
     border-bottom: rgba(255,255,255,0.2) solid 1px;
-    text-shadow: 0 2px 0 rgba(0,0,0,0.5);
+    /*text-shadow: 0 2px 0 rgba(0,0,0,0.5);*/
   }
   .subtitle{
     padding:10px 0;
@@ -128,11 +149,18 @@ body{
   &.logo {
     font-family: $logoFont;
     background:  $logoColor;
+    color: $logoTextColor;
+
+    .slogan {
+      font-family: $sloganFont;
+      font-weight: 100;
+    }
 
     h1{
       font-size: 5em;
-      text-shadow: 4px 3px 0px darken($logoColor, 15%), 9px 8px 0px rgba(0, 0, 0, 0.15);
+      /*text-shadow: 4px 3px 0px darken($logoTextColor, 12%), 9px 8px 0px rgba(0, 0, 0, 0.15);*/
       line-height: 1.1em;
+      padding-bottom: .1em;
       max-width: 640px;
       position: relative;
       margin: 0 auto;
@@ -179,13 +207,16 @@ body{
     h2 {
       font-weight: 100;
       font-size: 1.55em;
-      a {
-        color: inherit;
-        text-decoration: underline;
-      }
-      a:hover {
-        text-decoration: none;
-      }
+    }
+  }
+
+  h2, h3 {
+    a {
+      color: inherit;
+      text-decoration: underline;
+    }
+    a:hover{
+      text-decoration: none;
     }
   }
 
@@ -198,10 +229,11 @@ body{
 
   &.header {
     background: $headerColor;
-    color: $featuresColor;
+    color: $headerTextColor;
   }
   &.social {
     background: $socialColor;
+    color: $socialTextColor;
     i {
       /*width: 50%;*/
     }
@@ -226,6 +258,7 @@ body{
   }
   &.features {
     background: $featuresColor;
+    color: $featuresTextColor;
   }
   &.features, &.footer {
     .paragraph {
@@ -234,6 +267,7 @@ body{
   }
   &.love {
     background: $loveColor;
+    color: $loveTextColor;
   }
 
   p.relocation {
@@ -243,6 +277,7 @@ body{
 
   &.footer {
     background: $footerColor;
+    color: $textColorDark;
   }
   // Use & to chain parent elements. this outputs to .section.header,
   // which selects the HTML Element with both classes
@@ -283,7 +318,7 @@ body{
     box-sizing: border-box;
     width: 150px;
     border-radius: 50%;
-    color: black;
+    color: $popupTextColor;
     text-align: center;
     font-family: $popupFont;
     font-weight: 100;
