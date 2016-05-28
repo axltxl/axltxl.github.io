@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url(http://jesusoterogomez.github.io/css/reset.css);
 @import url(http://fonts.googleapis.com/css?family=Playfair+Display:900italic);
 @import url(http://fonts.googleapis.com/css?family=Lato);
@@ -48,13 +47,13 @@ body { position: relative; font-size: 120%; font-family: "Lato", sans-serif; }
 .section.logo h2 a:hover { text-decoration: none; }
 .section span.popup { cursor: pointer; position: relative; font-weight: 700; border-bottom: 2px dotted #fff; }
 .section.header { background: #F9E4AD; color: #723147; }
-.section.social { background: #9f3a4c; }
+.section.social { background: #9f3b4d; }
 .section.social i { /*width: 50%;*/ }
 .section.social nav { font-family: FontAwesome; vertical-align: top; /*different heights on the inline-block elements make them appear at different offsets from the parent, this normalizes this issue*/ font-weight: 100; font-size: 0; padding-top: 25pt; }
 .section.social nav a { display: inline-block; width: 50%; font-size: 80pt; color: inherit; text-decoration: none; position: relative; margin-bottom: .6em; }
 .section.features { background: #723147; }
 .section.features .paragraph, .section.footer .paragraph { text-align: justify; }
-.section.love { background: #512339; }
+.section.love { background: #522339; }
 .section p.relocation { font-variant: small-caps; font-size: 2em; }
 .section.footer { background: #31152B; }
 .section.header .pitch { font-size: 1.8em; }
