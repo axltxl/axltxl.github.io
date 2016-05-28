@@ -26,10 +26,10 @@ body { position: relative; font-size: 120%; font-family: "Lato", sans-serif; }
 
 .content { width: 90%; margin: 0 auto; text-align: center; max-width: 35em; }
 
-.pitch, .title { font-family: "Pacifico", cursive; font-weight: 100; }
+.pitch, .title { font-family: "Lato", sans-serif; font-weight: 100; }
 
 .section { padding: 3em 0; /* Text quality */ }
-.section .title { padding: 10px 0; font-size: 1.4em; border-bottom: rgba(255, 255, 255, 0.2) solid 1px; /*text-shadow: 0 2px 0 rgba(0,0,0,0.5);*/ }
+.section .title { padding: 10px 0; font-weight: bold; font-size: 1.5em; border-bottom: rgba(255, 255, 255, 0.2) solid 1px; /*text-shadow: 0 2px 0 rgba(0,0,0,0.5);*/ }
 .section .subtitle { padding: 10px 0; font-size: 1em; font-weight: 700; }
 .section .paragraph { font-size: .9em; line-height: 1.4em; font-weight: 400; /*max-width: 35em;*/ /*margin: 0 auto;*/ }
 .section .paragraph, .section ul { padding: 10px 0; }
@@ -48,13 +48,13 @@ body { position: relative; font-size: 120%; font-family: "Lato", sans-serif; }
 .section h2 a:hover, .section h3 a:hover { text-decoration: none; }
 .section span.popup { cursor: pointer; position: relative; font-weight: 700; border-bottom: 2px dotted #fff; }
 .section.header { background: #96ceb4; color: #4b4b4b; }
-.section.social { background: #ff6f69; color: #fbfbfb; }
+.section.social { background: #ffcc5c; color: #4b4b4b; }
 .section.social i { /*width: 50%;*/ }
 .section.social nav { font-family: FontAwesome; vertical-align: top; /*different heights on the inline-block elements make them appear at different offsets from the parent, this normalizes this issue*/ font-weight: 100; font-size: 0; padding-top: 25pt; }
 .section.social nav a { display: inline-block; width: 50%; font-size: 80pt; color: inherit; text-decoration: none; position: relative; margin-bottom: .6em; }
-.section.features { background: #ffcc5c; color: #4b4b4b; }
+.section.features { background: #ff6f69; color: #fefefe; }
 .section.features .paragraph, .section.footer .paragraph { text-align: justify; }
-.section.love { background: #d5d286; color: #4b4b4b; }
+.section.love { background: #d5a48d; color: #4b4b4b; }
 .section p.relocation { font-variant: small-caps; font-size: 2em; }
 .section.footer { background: #aad8b0; color: #4b4b4b; }
 .section.header .pitch { font-size: 1.8em; }
