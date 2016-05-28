@@ -20,7 +20,7 @@
   20% { -moz-transform: scale(0.2, 0.2); -ms-transform: scale(0.2, 0.2); -webkit-transform: scale(0.2, 0.2); transform: scale(0.2, 0.2); }
   75% { -moz-transform: scale(1.5, 1.5); -ms-transform: scale(1.5, 1.5); -webkit-transform: scale(1.5, 1.5); transform: scale(1.5, 1.5); }
   100% { -moz-transform: scale(1, 1); -ms-transform: scale(1, 1); -webkit-transform: scale(1, 1); transform: scale(1, 1); } }
-html { width: 100%; position: relative; color: #fff; background: #421E4E; }
+html { width: 100%; position: relative; color: #fff; background: #96ceb4; }
 
 body { position: relative; font-size: 120%; font-family: "Lato", sans-serif; }
 
@@ -29,13 +29,14 @@ body { position: relative; font-size: 120%; font-family: "Lato", sans-serif; }
 .pitch, .title { font-family: "Pacifico", cursive; font-weight: 100; }
 
 .section { padding: 3em 0; /* Text quality */ }
-.section .title { padding: 10px 0; font-size: 1.4em; border-bottom: rgba(255, 255, 255, 0.2) solid 1px; text-shadow: 0 2px 0 rgba(0, 0, 0, 0.5); }
+.section .title { padding: 10px 0; font-size: 1.4em; border-bottom: rgba(255, 255, 255, 0.2) solid 1px; /*text-shadow: 0 2px 0 rgba(0,0,0,0.5);*/ }
 .section .subtitle { padding: 10px 0; font-size: 1em; font-weight: 700; }
 .section .paragraph { font-size: .9em; line-height: 1.4em; font-weight: 400; /*max-width: 35em;*/ /*margin: 0 auto;*/ }
 .section .paragraph, .section ul { padding: 10px 0; }
 .section .paragraph, .section .popup { text-rendering: optimizeLegibility; }
-.section.logo { font-family: "Pacifico", cursive; background: #CC4452; }
-.section.logo h1 { font-size: 5em; text-shadow: 4px 3px 0px #9a2a35, 9px 8px 0px rgba(0, 0, 0, 0.15); line-height: 1.1em; max-width: 640px; position: relative; margin: 0 auto; left: -0.1em; }
+.section.logo { font-family: "Pacifico", cursive; background: #ffeead; color: #4b4b4b; }
+.section.logo .slogan { font-family: "Lato", sans-serif; font-weight: 100; }
+.section.logo h1 { font-size: 5em; /*text-shadow: 4px 3px 0px darken($logoTextColor, 12%), 9px 8px 0px rgba(0, 0, 0, 0.15);*/ line-height: 1.1em; padding-bottom: .1em; max-width: 640px; position: relative; margin: 0 auto; left: -0.1em; }
 .section.logo h1 .moustache { width: 150px; height: 32px; position: absolute; background-image: url(../media/images/moustache.svg); background-position: left top; background-size: 150px auto; background-repeat: no-repeat; right: 4%; bottom: 15%; -moz-transform: rotate(-7deg); -ms-transform: rotate(-7deg); -webkit-transform: rotate(-7deg); transform: rotate(-7deg); -moz-animation: wiggle 0.3s ease infinite; -webkit-animation: wiggle 0.3s ease infinite; animation: wiggle 0.3s ease infinite; }
 .section.logo h1 span { position: relative; }
 .section.logo h1 .hat { width: 64px; height: 64px; position: absolute; background-image: url(../media/images/hat.svg); background-position: left top; background-size: 64px auto; background-repeat: no-repeat; left: 0; top: 15%; -moz-transition: all 0.3s ease; -o-transition: all 0.3s ease; -webkit-transition: all 0.3s ease; transition: all 0.3s ease; }
@@ -43,26 +44,26 @@ body { position: relative; font-size: 120%; font-family: "Lato", sans-serif; }
 .section.logo h1 .moustache, .section.logo h1 .hat { -webkit-filter: invert(10%) drop-shadow(2px 2px 0 rgba(0, 0, 0, 0.5)); filter: invert(10%) drop-shadow(2px 2px 0 rgba(0, 0, 0, 0.5)); }
 .section.logo h1 .moustache:hover { -moz-animation: wiggle 0.3s ease infinite; -webkit-animation: wiggle 0.3s ease infinite; animation: wiggle 0.3s ease infinite; }
 .section.logo h2 { font-weight: 100; font-size: 1.55em; }
-.section.logo h2 a { color: inherit; text-decoration: underline; }
-.section.logo h2 a:hover { text-decoration: none; }
+.section h2 a, .section h3 a { color: inherit; text-decoration: underline; }
+.section h2 a:hover, .section h3 a:hover { text-decoration: none; }
 .section span.popup { cursor: pointer; position: relative; font-weight: 700; border-bottom: 2px dotted #fff; }
-.section.header { background: #F9E4AD; color: #723147; }
-.section.social { background: #9f3b4d; }
+.section.header { background: #96ceb4; color: #4b4b4b; }
+.section.social { background: #ff6f69; color: #fbfbfb; }
 .section.social i { /*width: 50%;*/ }
 .section.social nav { font-family: FontAwesome; vertical-align: top; /*different heights on the inline-block elements make them appear at different offsets from the parent, this normalizes this issue*/ font-weight: 100; font-size: 0; padding-top: 25pt; }
 .section.social nav a { display: inline-block; width: 50%; font-size: 80pt; color: inherit; text-decoration: none; position: relative; margin-bottom: .6em; }
-.section.features { background: #723147; }
+.section.features { background: #ffcc5c; color: #4b4b4b; }
 .section.features .paragraph, .section.footer .paragraph { text-align: justify; }
-.section.love { background: #522339; }
+.section.love { background: #d5d286; color: #4b4b4b; }
 .section p.relocation { font-variant: small-caps; font-size: 2em; }
-.section.footer { background: #31152B; }
+.section.footer { background: #aad8b0; color: #4b4b4b; }
 .section.header .pitch { font-size: 1.8em; }
 .section ul { text-align: left; font-size: .85em; font-weight: bold; }
 .section li { margin-bottom: .3em; }
 
 .popup { /*&:after{ display: none; width: 40px; content: ""; height: 40px; background: #FFF; position: absolute; bottom: 25px; left: 50%; margin-left: -10px; @include transform(rotate(45deg)); z-index: 1000; pointer-events:none;
 }*/ }
-.popup:before { display: none; vertical-align: middle; content: attr(data-content); position: absolute; bottom: 32px; left: 50%; margin-left: -50px; background: #FFF; font-size: 0.8em; line-height: normal; /* height: 150px; */ padding: 25px 20px; box-sizing: border-box; width: 150px; border-radius: 50%; color: black; text-align: center; font-family: "Pacifico", cursive; font-weight: 100; z-index: 2000; line-height: 1.33em; font-size: 10pt; }
+.popup:before { display: none; vertical-align: middle; content: attr(data-content); position: absolute; bottom: 32px; left: 50%; margin-left: -50px; background: #FFF; font-size: 0.8em; line-height: normal; /* height: 150px; */ padding: 25px 20px; box-sizing: border-box; width: 150px; border-radius: 50%; color: #4b4b4b; text-align: center; font-family: "Lato", sans-serif; font-weight: 100; z-index: 2000; line-height: 1.33em; font-size: 12pt; }
 .popup:hover:before { display: block; -moz-animation: popup 0.3s ease-out; -webkit-animation: popup 0.3s ease-out; animation: popup 0.3s ease-out; }
 
 @media screen and (min-width: 545px) { .section.logo h1 .moustache { -moz-animation: none; -webkit-animation: none; animation: none; }
