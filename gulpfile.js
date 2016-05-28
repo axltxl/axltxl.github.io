@@ -33,7 +33,7 @@ var dir_build = 'build/',
 
 // Build tasks
 gulp.task('build', ['html', 'styles', 'media', 'watch']);
-gulp.task('build:dist', ['html:dist', 'styles:dist', 'media:dist']);
+gulp.task('build:dist', ['html:dist', 'styles:dist', 'media:dist', 'dns:dist']);
 
 // Watch task
 gulp.task('watch', function() {
@@ -97,6 +97,13 @@ gulp.task('styles', function() {
 
 gulp.task('styles:dist', function(){
   return task_sass({style:'compressed'}, dir_dist);
+});
+
+
+// Insert CNAME file for custom domain association on github
+
+gulp.task('dns:dist', function() {
+  return gulp.src('CNAME').pipe(gulp.dest(dir_dist));
 });
 
 
