@@ -2,5 +2,14 @@
   "dependencies": {
     "@tailwindcss/cli": "^4.1.3",
     "tailwindcss": "^4.1.3"
+  },
+  "scripts": {
+    "build:css": "tailwindcss -i src/input.css -o dist/styles.css",
+    "build": "npm run build:css && cp src/index.html dist/",
+    "dev": "tailwindcss -i ./src/input.css -o ./src/styles.css --watch"
+  },
+  "devDependencies": {
+    "prettier": "^3.5.3",
+    "prettier-plugin-tailwindcss": "^0.6.11"
   }
 }
