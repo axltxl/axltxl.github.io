@@ -17,7 +17,6 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  background-color: white; /* or bg-white if using Tailwind */
   background-color: black;
   color: white;
   z-index: 50;  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
