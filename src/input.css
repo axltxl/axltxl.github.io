@@ -11,3 +11,13 @@ body {
 .lazy {
     min-height: 128px; /* this is to force lazy loading */
 }
+
+.sticky-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white; /* or bg-white if using Tailwind */
+  z-index: 50;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
