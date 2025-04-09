@@ -7,7 +7,7 @@
     "build:css": "tailwindcss -i src/input.css -o dist/styles.css",
     "build": "npm run build:css && cp -r src/* dist; rm dist/input.css",
     "dev": "tailwindcss -i ./src/input.css -o ./src/styles.css --watch",
-    "release": "npm run build && git checkout www && mv dist/**/* . && rm -rf dist && git add . && git commit -m 'release'; git push origin www"
+    "release": "npm run build && git checkout www && mv dist/* . && rm -rf dist && git add . && git commit -m 'release'; git push origin www"
   },
   "devDependencies": {
     "prettier": "^3.5.3",
